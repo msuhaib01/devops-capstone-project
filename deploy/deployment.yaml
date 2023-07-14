@@ -6,16 +6,7 @@ metadata:
     app: accounts
   name: accounts
 spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: accounts
-  strategy: {}
   template:
-    metadata:
-      creationTimestamp: null
-      labels:
-        app: accounts
     spec:
       containers:
       - image: IMAGE_NAME_HERE
